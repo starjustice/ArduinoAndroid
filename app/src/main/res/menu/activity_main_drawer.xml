@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Main"
+            android:title="Main" />
+        <item
+            android:id="@+id/Write"
+            android:title="Write" />
+        <item
+            android:id="@+id/Read"
+            android:title="Read" />
+        <item
+            android:id="@+id/Change_Profile"
+            android:title="Profle" />
+    </group>
+
+</menu>
