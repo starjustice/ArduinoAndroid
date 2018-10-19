@@ -7,34 +7,31 @@
     tools:context=".activity_device">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/refreshButton"
+            android:text="Paired Devices"
+            android:id="@+id/textViewDevices"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:alpha="0.8"
-            android:text="Devices:"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_alignParentStart="true" />
 
         <Button
-            android:id="@+id/refreshButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:text="Paired Devices"
+            android:id="@+id/buttonrefresh"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:onClick="pairedDevicesList"
-            android:text="Refresh"
-            android:textStyle="bold" />
+            android:layout_alignParentEnd="true" />
 
         <ListView
-            android:id="@+id/listViewdevice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true" />
+            android:id="@+id/listViewDevice"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/buttonrefresh"
+            android:layout_below="@+id/textView" />
 
 </android.support.constraint.ConstraintLayout>
